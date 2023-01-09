@@ -22,4 +22,10 @@
         font-size: 16px;
         color: #000000;
     }
+    &__link {
+        color: #000000;
+        &:hover {
+            color: $main-color;
+        }
+    }
 }
