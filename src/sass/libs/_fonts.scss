@@ -23,21 +23,20 @@
 // icons
 
 @font-face {
-    font-family: 'icomoon';
-    src:  url('../../fonts/fonts-icons/icomoon.eot?qivltg');
-    src:  url('../../fonts/fonts-icons/icomoon.eot?qivltg#iefix') format('embedded-opentype'),
-      url('../../fonts/fonts-icons/icomoon.ttf?qivltg') format('truetype'),
-      url('../../fonts/fonts-icons/icomoon.woff?qivltg') format('woff'),
-      url('../../fonts/fonts-icons/icomoon.svg?qivltg#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-  }
+  font-family: 'icomoon';
+  src:  url('../../fonts/fonts-icons/icomoon.eot?jiixp1');
+  src:  url('../../fonts/fonts-icons/icomoon.eot?jiixp1#iefix') format('embedded-opentype'),
+    url('../../fonts/fonts-icons/icomoon.ttf?jiixp1') format('truetype'),
+    url('../../fonts/fonts-icons/icomoon.woff?jiixp1') format('woff'),
+    url('../../fonts/fonts-icons/icomoon.svg?jiixp1#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
   
   [class^="icon-"], [class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon' !important;
-    // speak: never;
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
@@ -49,6 +48,9 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
+  .icon-cross:before {
+    content: "\ea0f";
+  }
   .icon-facebook2:before {
     content: "\ea91";
   }

@@ -3,6 +3,12 @@
     position: relative;
     background: url('../img/main_bg.jpg') no-repeat 50%/cover;
     padding-top: 200px;
+    transition: all 0.6s;
+    .container {
+        &.active {
+            margin-left: 360px;
+        }
+    }
     &__header {
         width: 536px;
         margin-top: 10px;
