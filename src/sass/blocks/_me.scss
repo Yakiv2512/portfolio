@@ -1,0 +1,57 @@
+.me {
+    margin-top: 120px;
+    .container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    &__photo {
+        width: 400px;
+        margin-right: 68px;
+        img {
+            width: 100%;
+        }
+    }
+    &__desc {
+        width: 570px;
+    }
+    .didvider {
+        margin-top: 4px;
+    }
+    .text {
+        margin-top: 20px;
+        &_fs12 {
+            margin-top: 6px;
+        }
+    }
+    &__skills {
+        margin-top: 40px;
+        width: 600px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(260px, auto));
+        grid-template-rows: minmax(120px, auto);
+        grid-auto-rows: 120px;
+        gap: 20px 50px;
+        &_item {
+            width: 260px;
+            display: flex;
+            justify-content: start;
+            align-items: flex-start;
+        }
+        &_logo {
+            .subtitle {
+                width: 40px;
+                margin-right: 20px;
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+                div {
+                    margin-top: 4px;
+                }
+                &_margin-right {
+                    margin-right: 6px;
+                }
+            }
+        }
+    }
+}

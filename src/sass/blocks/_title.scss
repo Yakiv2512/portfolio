@@ -6,6 +6,10 @@
     &_h1 {
         font-size: 48px;
     }
+    &_fs14 {
+        font-size: 14px;
+        line-height: 21px;
+    }
 }
 
 .subtitle {
@@ -17,4 +21,21 @@
     position: relative;
     z-index: 1;
     @include before_circle
+}
+
+.didvider {
+    width: 60px;
+    height: 3px;
+    background-color: $main-color;
+}
+
+.text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+    &_fs12 {
+        font-size: 12px;
+        line-height: 18px;
+    }
 }
