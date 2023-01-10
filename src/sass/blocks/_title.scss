@@ -10,6 +10,10 @@
         font-size: 14px;
         line-height: 21px;
     }
+    &_fs20 {
+        font-size: 20px;
+        line-height: 30px;
+    }
 }
 
 .subtitle {
@@ -20,10 +24,14 @@
     padding: 6px 0 6px 10px;
     position: relative;
     z-index: 1;
-    @include before_circle
+    @include before_circle_left;
+    &_center {
+        padding: 0;
+        @include before_circle_center;
+    }
 }
 
-.didvider {
+.divider {
     width: 60px;
     height: 3px;
     background-color: $main-color;

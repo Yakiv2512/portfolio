@@ -1,0 +1,63 @@
+.resume {
+    padding-top: 120px;
+    &__title {
+        text-align: center;
+        .divider {
+            margin: 0 auto;
+            margin-top: 25px;
+        }
+    }
+    &__wrapper {
+        padding: 60px 65px 0 65px; 
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        column-gap: 135px;
+    }
+    &__column {
+        &-title {
+            position: relative;
+            padding-left: 35px;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                background: $main-color;
+                border-radius: 100%;
+                left: -7px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        ul {
+            list-style-type: none;
+            li {
+                position: relative;
+                &:after {
+                    content: '';
+                    width: 1px;
+                    height: 100%;
+                    position: absolute;
+                    top: -16px;
+                    left: -32px;
+                    background: #000;
+                }
+            }
+        }
+    }
+    &__item {
+        &-head {
+            padding-left: 100px;
+            padding-top: 45px;
+            position: relative;
+        }
+        &-body {
+            padding-top: 12px;
+        }
+        &-icon {
+            position: absolute;
+            top: 50px;
+            left: 0;
+        }
+    }
+}
