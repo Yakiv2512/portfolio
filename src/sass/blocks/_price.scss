@@ -1,0 +1,10 @@
+.price {
+    padding-top: 60px;
+    &__items {
+        margin-top: 60px;
+        display: grid;
+        grid-template: 44px / repeat(2, 1fr);
+        grid-auto-rows: 44px;
+        
+    }
+}

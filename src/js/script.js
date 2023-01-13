@@ -13,3 +13,11 @@ close.addEventListener('click', () => {
     container.classList.remove('active');
 });
 
+// script для изменения %
+
+const percent = document.querySelectorAll('.skills__grid-block-skills_procent'),
+    lines = document.querySelectorAll('.skills__grid-block-skills_line-orange');
+
+percent.forEach((item, i) => {
+    lines[i].style.width = item.innerHTML;
+});
