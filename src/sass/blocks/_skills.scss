@@ -1,0 +1,32 @@
+.skills {
+    padding-top: 120px;
+    &__grid-block {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+        grid-template-rows: minmax(270px, auto);
+        grid-auto-rows: minmax(270px, auto);
+        gap: 13px;
+    }
+    &__grid-item {
+        padding: 30px 30px 25px 30px;
+        border: 1px solid #000;
+        &_img {
+            margin-bottom: 20px;
+            height: 65px;
+            img {
+                height: 100%;
+                max-width: calc(100% - 60px);
+            }
+        }
+        .text {
+            margin-bottom: 15px;
+        }
+        &_desc {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            color: #000000;
+        }
+    }
+}

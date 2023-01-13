@@ -17,7 +17,7 @@
         &-title {
             position: relative;
             padding-left: 35px;
-            &::before {
+            &:before {
                 content: '';
                 position: absolute;
                 width: 15px;
@@ -30,34 +30,63 @@
             }
         }
         ul {
+            padding: 0;
             list-style-type: none;
             li {
                 position: relative;
                 &:after {
                     content: '';
                     width: 1px;
-                    height: 100%;
+                    height: calc(100% + 16px);
                     position: absolute;
                     top: -16px;
-                    left: -32px;
                     background: #000;
                 }
             }
         }
     }
     &__item {
+        padding-left: 43px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            height: 1px;
+            width: 43px;
+            background-color: #000;
+            left: 0;
+            top: 66px;
+        }
         &-head {
-            padding-left: 100px;
+            padding-left: 50px;
             padding-top: 45px;
             position: relative;
         }
         &-body {
+            max-width: 375px;
             padding-top: 12px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            color: #000000;
         }
         &-icon {
             position: absolute;
             top: 50px;
             left: 0;
+            img {
+                margin-left: 5px;
+                margin-top: 5px;
+            }
+        }
+        &_subtitle {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            color: #000000;
+        }
+        .title {
+            margin-bottom: 0;
         }
     }
 }
