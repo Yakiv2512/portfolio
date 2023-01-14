@@ -56,23 +56,23 @@
 
             <nav>
                 <ul class="menu__list">
-                    <li class="menu__item">
-                        <a href="#">ПРО МЕНЯ</a>
+                    <li class="menu__item item1">
+                        <a href="#me">ПРО МЕНЯ</a>
                     </li>
-                    <li class="menu__item">
-                        <a href="#">МОЙ ОПЫТ</a>
+                    <li class="menu__item item2">
+                        <a href="#exp">МОЙ ОПЫТ</a>
                     </li>
-                    <li class="menu__item">
-                        <a href="#">МОИ НАВЫКИ</a>
+                    <li class="menu__item item3">
+                        <a href="#skills">МОИ НАВЫКИ</a>
                     </li>
-                    <li class="menu__item">
-                        <a href="#">МОИ РАБОТЫ</a>
+                    <li class="menu__item item4">
+                        <a href="#works">МОИ РАБОТЫ</a>
                     </li>
-                    <li class="menu__item">
-                        <a href="#">ПРАЙС-ЛИСТ</a>
+                    <li class="menu__item item5">
+                        <a href="#price">ПРАЙС-ЛИСТ</a>
                     </li>
-                    <li class="menu__item">
-                        <a href="#">КОНТАКТЫ</a>
+                    <li class="menu__item item6">
+                        <a href="#contacts">КОНТАКТЫ</a>
                     </li>
                 </ul>
             </nav>
@@ -115,7 +115,7 @@
         </div>
     </section>
 
-    <section class="me">
+    <section id="me" class="me">
         <div class="container">
             <div class="me__photo">
                 <img src="img/main_photo.jpg" alt="me">
@@ -208,7 +208,7 @@
         </div>
     </section>
 
-    <section class="resume">
+    <section class="resume" id="exp">
         <div class="container">
             <div class="resume__title">
                 <h2 class="subtitle subtitle_center">Опыт</h2>
@@ -306,7 +306,7 @@
         </div>
     </section>
 
-    <section class="skills">
+    <section class="skills" id="skills">
         <div class="container">
             <div class="resume__title">
                 <h2 class="subtitle subtitle_center">Навыки</h2>
@@ -487,7 +487,7 @@
         </div>
     </section>
 
-    <section class="portfolio">
+    <section class="portfolio" id="works">
         <div class="container">
             <div class="resume__title">
                 <h2 class="subtitle subtitle_center">Портфолио</h2>
@@ -518,7 +518,7 @@
         </div>
     </section>
 
-    <section class="price">
+    <section class="price" id="price">
         <div class="container">
             <div class="resume__title">
                 <h2 class="subtitle subtitle_center">Прайс-лист</h2> 
@@ -591,6 +591,73 @@
                     <p class="price__item_desc">
                         Создам дизайн для вашего сайта/приложения...
                     </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+        <div class="container">
+            <div class="contacts__wrapper">
+                <div class="contacts__photo">
+                    <img src="img/main_photo.jpg" alt="photo">
+                </div>
+                <div class="contacts__desc">
+                    <h2 class="subtitle">Контакты</h2>
+                    <div class="title">Свяжитесь со мной</div>
+                    <div class="divider"></div>
+                    <div class="text text_fw700 contacts__text">
+                        Любым удобным для вас способом:
+                    </div>
+                    <div class="contacts__social">
+                        <a href="#" class="contacts__link">
+                            <img src="icons/social media/Facebook.svg" alt="Facebook">
+                        </a>
+                        <a href="#" class="contacts__link">
+                            <img src="icons/social media/Telegram.svg" alt="Telegram">
+                        </a>
+                        <a href="#" class="contacts__link">
+                            <img src="icons/social media/Instagram.svg" alt="Instagram">
+                        </a>
+                    </div>
+                    <div class="text text_fw700 contacts__text">
+                        Или оставьте ваши данные и я сама вам напишу:
+                    </div>
+
+                    <form action="#" class="contacts__form">
+                        <div class="contacts__input">
+                            <input required name="name" id="name" type="text">
+                            <label for="name">
+                                Ваше имя
+                            </label>
+                        </div>
+                        <div class="contacts__input">
+                            <input required name="email" id="email" type="email">
+                            <label for="email">
+                                Ваша почта
+                            </label>
+                        </div>
+                        <div class="contacts__textarea">
+                            <textarea name="text" id="text">
+                                
+                            </textarea>
+                            <label for="text">
+                                Ваше сообщение
+                            </label>
+                        </div>
+                        <div class="contacts__triggers">
+                            <button class="btn contacts__btn">
+                                Отправить сообщение
+                            </button>
+                            <div class="contacts__policy">
+                                <input required name="checkbox" id="checkbox" type="checkbox">
+                                <span>
+                                    Я согласен(а) с 
+                                    <a href="/policy.html">политикой конфиденциальности</a>
+                                </span>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
