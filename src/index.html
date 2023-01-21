@@ -109,8 +109,8 @@
                 Я web-разработчик из города Москва
             </h1>
             <div class="promo__btns">
-                <a href="#" class="promo__link btn">Портфолио</a>
-                <a href="#" class="promo__link btn btn_passive">Про меня</a>
+                <a href="#works" class="promo__link btn">Портфолио</a>
+                <a href="#me" class="promo__link btn btn_passive">Про меня</a>
             </div>
         </div>
     </section>
@@ -118,7 +118,20 @@
     <section id="me" class="me">
         <div class="container">
             <div class="me__photo">
-                <img src="img/main_photo.jpg" alt="me">
+                <!-- <img srcset="img/main_photo_min.jpg 300w,
+                            img/main_photo.jpg 400w"
+                    sizes="(max-width: 576px) 280px,
+                            (min-width: 577px) 400px"   
+                    src="img/main_photo.jpg" alt="me"> -->
+                <picture>
+                    <!-- для других форматов, чтобы быстрее загружалось -->
+                    <!-- <source type="image/webp" srcset=""> -->
+                    <source media="(max-width: 576px)" 
+                            srcset="img/main_photo_min.jpg">
+                    <source media="(min-width: 577px)"
+                            srcset="img/main_photo.jpg">
+                    <img src="img/main_photo.jpg" alt="me">
+                </picture>
             </div>
             <div class="me__desc">
                 <div class="me__about">
@@ -487,7 +500,7 @@
         </div>
     </section>
 
-    <!-- <section class="portfolio" id="works">
+    <section class="portfolio" id="works">
         <div class="container">
             <div class="resume__title">
                 <h2 class="subtitle subtitle_center">Портфолио</h2>
@@ -516,9 +529,9 @@
                 </a>
             </div>
         </div>
-    </section> -->
+    </section>
 
-    <!-- <section class="price" id="price">
+    <section class="price" id="price">
         <div class="container">
             <div class="resume__title">
                 <h2 class="subtitle subtitle_center">Прайс-лист</h2> 
@@ -594,9 +607,9 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
-    <!-- <section class="contacts" id="contacts">
+    <section class="contacts" id="contacts">
         <div class="container">
             <div class="contacts__wrapper">
                 <div class="contacts__photo">
@@ -661,7 +674,7 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <script src="js/script.js"></script>
 </body>
